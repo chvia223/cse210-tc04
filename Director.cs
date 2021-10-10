@@ -2,10 +2,13 @@ using System;
 
 namespace cse210_tc04
 {
+    ///<summary> this class is responsible for the game. It keeps track for the score,
+    /// the interactions between functions and when they should be called.
+    /// It also coordinate if the player wants to keep playing.
+    /// <summary>
     class Director
     {
         int _score = 300;
-
         bool _playAgain = true;
         
         Dealer _dealer = new Dealer();
@@ -35,20 +38,5 @@ namespace cse210_tc04
 
             Console.WriteLine($"Thanks for playing");
         }
-
-        void GetInputs()
-        {
-            throw new NotImplementedException();
-        }
-
-        void DoUpdates()
-        {
-            throw new NotImplementedException();
-        }
-
-        void DoOutputs()
-        {
-            throw new NotImplementedException();
-        }
-    }
+    } // end of class: Director
 }
