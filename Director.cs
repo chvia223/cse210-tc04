@@ -13,6 +13,9 @@ namespace cse210_tc04
         
         Dealer _dealer = new Dealer();
 
+        ///<summary>
+        /// Will start a new instance of the game. 
+        /// <summary>
         public void StartGame()
         {
             _dealer.DrawCard();
