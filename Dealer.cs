@@ -59,6 +59,11 @@ namespace cse210_tc04
             return addingPoints;
         }
 
+        /// <summary>
+        /// Will display a high or low prompt and
+        /// read the user's input.
+        /// </summary>
+        /// <returns>The letter selected by the user</returns>
         public string UserGuess()
         {
             Console.Write($"Higher or lower? [h/l] ");
