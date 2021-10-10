@@ -10,7 +10,6 @@ namespace cse210_tc04
     class Dealer
     {
         // Declaring the member variables here
-
         public int _previousCard = 0;
         public int _newCard = 0;
         string _guess = "empty";
