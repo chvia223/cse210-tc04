@@ -44,6 +44,8 @@ namespace cse210_tc04
             return number;
         }
 
+        // Determines whether the new card is high or lower than the previous card and returns h or l
+        // This will be used in the points function to against user input
         public string HigherOrLower()
         {
             string newCard = "l";
@@ -55,6 +57,9 @@ namespace cse210_tc04
             return newCard;
         }
 
+         // Add points or removes points based on the user input
+        // Checkes with HigherOrLower function to determine if points should be added/removed from score
+        // returns added points to be added/removed from the score
         public int Points()
         {
             int addingPoints = -75;
