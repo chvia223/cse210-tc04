@@ -21,9 +21,14 @@ namespace cse210_tc04
             _previousCard = _newCard;
             return _previousCard;
         }
+        ///<summery>
+        /// This generates a number from 1-13 
+        /// 
+        /// this returns the number that was picked.
+        ///</summary> 
         public int DrawCard()
         {
-            //_numDeals++;
+            
             int number = 0;
             Random randomGenerator = new Random();
 
