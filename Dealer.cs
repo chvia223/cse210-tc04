@@ -2,20 +2,23 @@ using System;
 
 namespace cse210_tc04
 {
+    /// <summary>
+    /// Represents the dealer; draw new cards, keep trak of the previous card 
+    /// and compare with the new card. Record the guess of the user and compares it
+    /// with reality.
+    /// <summary>
     class Dealer
     {
-        //int _numDeals = 0;
+        // Declaring the member variables here
         public int _previousCard = 0;
         public int _newCard = 0;
-
         string _guess = "empty";
 
-        // public bool IsFirstCard()
-        // {
-        //     return _numDeals == 0;
-        // }
-
-        
+        /// <summary>
+        /// in a new draw, changes position of the card in the variable.
+        /// If the player choose to play again, swithcs the card already visible to the
+        /// place that will be compared to the new card
+        /// </summary> 
         public int ChangeCardPlaces()
         {
             _previousCard = _newCard;
@@ -23,7 +26,6 @@ namespace cse210_tc04
         }
         public int DrawCard()
         {
-            //_numDeals++;
             int number = 0;
             Random randomGenerator = new Random();
 
